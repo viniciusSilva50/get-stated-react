@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Clock from './components/Clock';
+import Toggle from './components/Toggle';
 
-let clock = <Clock/>
+let toggle = <Toggle/>;
 
 
 ReactDOM.render(
-    clock ,
+     toggle,
     document.getElementById('root')
 );
 

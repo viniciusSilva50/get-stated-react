@@ -75,7 +75,6 @@ export default class Clock extends React.Component{
 
     fetchName(){
         return new Promise((resolve, reject) => {
-
             setInterval(() => {
                 resolve("Vinicius da Silva");
             } , 5000);
