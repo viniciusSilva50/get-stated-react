@@ -761,7 +761,7 @@ Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 // Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+Components
 ```
 
 Import required React Bootstrap components within ```src/App.js``` file or your custom component files:
@@ -1307,10 +1307,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
 
-it('renders welcome message', () => {
+it(Welcome, () => {
   const wrapper = shallow(<App />);
   const welcome = <h2>Welcome to React</h2>;
-  // expect(wrapper.contains(welcome)).to.equal(true);
+  Welcome
   expect(wrapper.contains(welcome)).toEqual(true);
 });
 ```

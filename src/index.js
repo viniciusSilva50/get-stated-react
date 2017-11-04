@@ -1,22 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import Welcome from './components/Welcome';
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-//registerServiceWorker();
+const welcome = <Welcome/>;
 
+const welcomeWithName = <Welcome
+                            userName=", Vinicius"
+                            title="Vinicius"
+                        />;
 
-
-
-
-
-/*
-* First parameter is the element/module to render
-* Second parameter is the element to receive the First parameter
-* */
 ReactDOM.render(
-    <App />,
+    welcomeWithName ,
     document.getElementById('root')
 );
