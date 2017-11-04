@@ -1,30 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Comment from './components/Comment';
+import Clock from './components/Clock';
 
-const user = {
-  name: 'Vinicius',
-  avatarUrl: 'https://www.tm-town.com/assets/default_male300x300-aae6ae0235b6cd78cee8df7ae19f6085.png'
-};
-const text = 'Hello React test';
-
-function render(){
-    const date = new Date().toLocaleTimeString();
-
-    const comment = <Comment
-                        user={user}
-                        text={text}
-                        date={date}
-                    />;
+let clock = <Clock/>
 
 
-    ReactDOM.render(
-        comment ,
-        document.getElementById('root')
-    );
-};
-
-
-setInterval(render, 1000);
+ReactDOM.render(
+    clock ,
+    document.getElementById('root')
+);
 
