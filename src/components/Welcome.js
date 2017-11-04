@@ -8,8 +8,8 @@ export default class Welcome extends React.Component{
      * @returns {XML}
      */
     render() {
-        return <h1 title={this.props.title}>Oi{this.props.userName}  </h1>
-    }
+        return <h1 title={this.props.title}>Oi {this.props.userName}  </h1>
+    };
 
     /**
      * From a multiple lines this is a good way

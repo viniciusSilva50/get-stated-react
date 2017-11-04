@@ -1,16 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Welcome from './components/Welcome';
+import Comment from './components/Comment';
 
-const welcome = <Welcome/>;
+const user = {
+  name: 'Vinicius',
+  avatarUrl: 'https://www.tm-town.com/assets/default_male300x300-aae6ae0235b6cd78cee8df7ae19f6085.png'
+};
+const text = 'Hello React test';
 
-const welcomeWithName = <Welcome
-                            userName=", Vinicius"
-                            title="Vinicius"
-                        />;
+function render(){
+    const date = new Date().toLocaleTimeString();
 
-ReactDOM.render(
-    welcomeWithName ,
-    document.getElementById('root')
-);
+    const comment = <Comment
+                        user={user}
+                        text={text}
+                        date={date}
+                    />;
+
+
+    ReactDOM.render(
+        comment ,
+        document.getElementById('root')
+    );
+};
+
+
+setInterval(render, 1000);
+
