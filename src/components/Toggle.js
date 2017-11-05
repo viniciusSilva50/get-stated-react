@@ -32,9 +32,7 @@ export default class Toggle extends React.Component {
     }
 
     resetClick(){
-        this.setState((prevState) => ({
-            value: 0
-        }));
+        this.setState({value: 0});
     }
 
     /**

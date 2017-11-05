@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Toggle from './components/Toggle';
+import Mailbox from './components/Mailbox';
 
-let toggle = <Toggle/>;
-
+let messages = ['Oi', 'Tudo bem?'];
+const mailbox = <Mailbox unreadMessages={messages}/>;
 
 ReactDOM.render(
-     toggle,
+    mailbox,
     document.getElementById('root')
 );
 
